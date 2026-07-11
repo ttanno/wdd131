@@ -1,0 +1,114 @@
+/* ===== Variables de color y tipografía ===== */
+:root {
+    --color-header: #2b2d42;
+    --color-nav: #101010;
+    --color-main: #cccccc;
+    --color-aside: #ffffff;
+    --color-footer: #2b2d42;
+    --color-light: #f5f5f5;
+    --color-text: #2b2d42;
+    --color-accent: #ef233c;
+    --font-main: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== Reset básico ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    min-height: 100vh;
+
+    /* CSS Grid para la estructura general de la página */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "main   aside"
+        "footer footer";
+}
+
+/* ===== Header (incluye el nav dentro) ===== */
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+
+header > p {
+    background-color: var(--color-header);
+    color: var(--color-light);
+    padding: 1.25rem 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== Navegación con Flexbox ===== */
+nav {
+    background-color: var(--color-nav);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+/* ===== Main ===== */
+main {
+    grid-area: main;
+    background-color: var(--color-main);
+    padding: 1.5rem;
+}
+
+/* ===== Aside ===== */
+aside {
+    grid-area: aside;
+    background-color: var(--color-aside);
+    padding: 1.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    grid-area: footer;
+    background-color: var(--color-footer);
+    color: var(--color-light);
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+/* ===== Responsive: apilar en pantallas pequeñas ===== */
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

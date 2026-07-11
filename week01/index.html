@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Alessandro</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals home page for Alessandro, featuring an about-me profile, Lima Peru background, and a favorite hobby: snowboarding.">
+    <meta name="author" content="Alessandro">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/alessandrojft/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Alessandro Felix</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="intro-text">
+                    <p>My name is Alessandro Felix and I am from Peru. I love spending my
+                        free time snowboarding whenever I get the chance to hit the
+                        mountains. I enjoy learning new things, staying active, and
+                        exploring new places whenever I can.</p>
+                </div>
+
+                <img class="profile-photo" src="images/profile.jpeg" alt="Portrait of Alessandro Felix" width="200" height="240">
+
+                <div class="country-info">
+                    <h3>Lima, Peru</h3>
+                    <div class="country-info-row">
+                        <figure>
+                            <img src="images/lima.jpg" alt="Lima, Peru" width="150" height="100">
+                            <figcaption>Lima, Peru</figcaption>
+                        </figure>
+                        <p>Lima is the capital and largest city of Peru, located on the
+                            country's arid Pacific coast. It is home to a rich mix of
+                            colonial architecture, modern skyscrapers, and some of the
+                            best cuisine in the world. Lima is often called the
+                            "Gastronomic Capital of the Americas" thanks to its
+                            world-renowned restaurants and diverse culinary traditions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>My Favorite Hobby</h2>
+            <div class="hobby-content">
+                <img src="images/hobby.JPG" alt="Alessandro snowboarding down a mountain slope" width="280" height="190" class="hobby-photo">
+                <p>Snowboarding is my favorite hobby. There's nothing quite like
+                    carving down a fresh slope with the mountain air rushing past.
+                    It keeps me active, clears my mind, and gives me something to
+                    look forward to every season. Whenever I get the chance, I try
+                    to hit the mountains and catch a few runs.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Alessandro Felix - Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
