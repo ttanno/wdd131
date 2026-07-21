@@ -1,0 +1,48 @@
+@media screen and (min-width: 48rem) {
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  .header-bar {
+    padding: 1rem 0;
+  }
+
+  nav {
+    max-height: none;
+    overflow: visible;
+    border-top: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.75rem;
+    padding: 0;
+  }
+
+  main {
+    max-width: 1100px;
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  main h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .gallery figure img {
+    height: 200px;
+  }
+}

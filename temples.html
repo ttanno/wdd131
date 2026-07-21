@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A photo album celebrating the architecture of temples around the world.">
+  <meta name="author" content="Alessandro Felix">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS, then large-view overrides -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-bar">
+      <p class="wordmark">Temple Album</p>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
+    </div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>A Gallery of Temples</h1>
+
+    <div class="gallery">
+      <figure>
+        <img src="images/templos/templo-lima.jpg" alt="Lima Peru Temple" loading="lazy" width="600" height="400">
+        <figcaption>Lima Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-trujillo.jpg" alt="Trujillo Peru Temple" loading="lazy" width="600" height="400">
+        <figcaption>Trujillo Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-arequipa.jpg" alt="Arequipa Peru Temple" loading="lazy" width="600" height="400">
+        <figcaption>Arequipa Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-olivos.jpg" alt="Los Olivos Peru Temple" loading="lazy" width="600" height="400">
+        <figcaption>Los Olivos Peru Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-guayaquil.jpg" alt="Guayaquil Ecuador Temple" loading="lazy" width="600" height="400">
+        <figcaption>Guayaquil Ecuador Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-tokio.jpg" alt="Tokyo Japan Temple" loading="lazy" width="600" height="400">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-la.jpg" alt="Los Angeles California Temple" loading="lazy" width="600" height="400">
+        <figcaption>Los Angeles California Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-roma.jpg" alt="Rome Italy Temple" loading="lazy" width="600" height="400">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/templos/templo-salt-lake.jpg" alt="Salt Lake Temple" loading="lazy" width="600" height="400">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Alessandro Felix | Temple Album | Lima, Perú</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
