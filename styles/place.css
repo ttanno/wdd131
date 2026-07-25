@@ -1,0 +1,192 @@
+/* ---------- Custom properties ---------- */
+:root {
+  --color-primary: #d91023;      /* Peru flag red */
+  --color-primary-dark: #a20c1a;
+  --color-accent: #b8860b;       /* gold accent for card headers, evoking Inca goldwork */
+  --color-light: #ffffff;
+  --color-bg: #fdf7f5;
+  --color-text: #2b2b2b;
+  --color-muted: #6b6b6b;
+  --font-heading: "Georgia", "Times New Roman", serif;
+  --font-body: "Helvetica Neue", Arial, sans-serif;
+  --card-width: 300px;
+}
+
+/* ---------- Reset / base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.site-header h1 {
+  color: var(--color-light);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.accent-bar {
+  height: 8px;
+  background-color: var(--color-accent);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Panels (Data / Weather) — mobile default: plain, stacked ---------- */
+.panel {
+  width: 100%;
+}
+
+.panel-header {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.panel-header h2 {
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+}
+
+.panel-body {
+  padding: 0 1rem 1rem;
+}
+
+.panel-body dl {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.panel-body dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.panel-body dt {
+  font-weight: bold;
+}
+
+.panel-body dd {
+  margin: 0;
+  text-align: right;
+}
+
+.weather-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.weather-panel img.weather-icon-mobile {
+  width: 56px;
+  height: 56px;
+  max-width: 56px;
+  max-height: 56px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+/* ---------- Wide-viewport layout: cards float over the hero image ---------- */
+@media (min-width: 700px) {
+  .panel {
+    position: absolute;
+    width: var(--card-width);
+    background-color: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .data-panel {
+    top: -24px;
+    left: 24px;
+  }
+
+  .weather-panel {
+    bottom: -24px;
+    right: 24px;
+  }
+
+  .panel-header {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    text-align: left;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .panel-header h2 {
+    color: var(--color-light);
+    font-size: 1.3rem;
+  }
+
+  .panel-body {
+    padding: 1rem 1.25rem;
+  }
+
+  .weather-heading {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* SVG icon is mobile-only */
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  /* Wide view uses a pseudo-element emoji icon after the "Weather" heading */
+  .weather-heading::after {
+    content: "\26C5";
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+}
