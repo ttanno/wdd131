@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album | WDD 131</title>
+  <meta name="description" content="A photo album celebrating the architecture of temples around the world, filterable by age and size.">
+  <meta name="author" content="Alessandro Felix">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS, then large-view overrides -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-bar">
+      <p class="wordmark">Temple Album</p>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
+    </div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#" class="active" data-filter="home">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>A Gallery of Temples</h1>
+
+    <div class="gallery" id="gallery">
+      <!-- Temple cards are generated dynamically by JavaScript -->
+    </div>
+  </main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Alessandro Felix | Temple Album | Lima, Perú</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
