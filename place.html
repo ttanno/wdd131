@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peru</title>
-  <meta name="description" content="Key facts and current weather for Peru.">
+  <title>Peru | Country Facts and Current Weather</title>
+  <meta name="description" content="Explore key facts about Peru, including its geography, population, capital, and languages, along with today's current weather conditions.">
+  <meta name="author" content="Alessandro Felix">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
@@ -16,51 +17,53 @@
 
   <div class="accent-bar"></div>
 
-  <div class="hero">
-    <picture>
-      <source srcset="images/hero-wide.webp" media="(min-width: 700px)">
-      <img
-        src="images/hero-mobile.webp"
-        alt="Terraced mountain ruins in the Andes"
-        width="900"
-        height="1300">
-    </picture>
-
-    <section class="panel data-panel">
-      <div class="panel-header">
-        <h2>Data</h2>
-      </div>
-      <div class="panel-body">
-        <dl>
-          <div><dt>Area:</dt><dd>1,285,216 sq km</dd></div>
-          <div><dt>Population:</dt><dd>34,049,588</dd></div>
-          <div><dt>Capital:</dt><dd>Lima</dd></div>
-          <div><dt>Languages:</dt><dd>Spanish, Quechua</dd></div>
-          <div><dt>Currency:</dt><dd>Sol (PEN)</dd></div>
-          <div><dt>Time Zone:</dt><dd>UTC-5</dd></div>
-          <div><dt>Calling Code:</dt><dd>+51</dd></div>
-          <div><dt>Internet TLD:</dt><dd>.pe</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="panel weather-panel">
-      <div class="panel-header">
-        <h2 class="weather-heading">
-          <img src="images/weather-icon.svg" alt="" class="weather-icon-mobile">
-          Weather
-        </h2>
-      </div>
-      <div class="panel-body">
-        <dl>
-          <div><dt>Temperature:</dt><dd><span id="temp"></span> °C</dd></div>
-          <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
-          <div><dt>Wind:</dt><dd><span id="wind-speed"></span> km/h</dd></div>
-          <div><dt>Wind Chill:</dt><dd><span id="wind-chill"></span></dd></div>
-        </dl>
-      </div>
-    </section>
-  </div>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-wide.webp" media="(min-width: 700px)">
+        <img
+          src="images/hero-mobile.webp"
+          alt="Terraced mountain ruins in the Andes"
+          width="900"
+          height="1300">
+      </picture>
+  
+      <section class="panel data-panel">
+        <div class="panel-header">
+          <h2>Data</h2>
+        </div>
+        <div class="panel-body">
+          <dl>
+            <div><dt>Area:</dt><dd>1,285,216 sq km</dd></div>
+            <div><dt>Population:</dt><dd>34,049,588</dd></div>
+            <div><dt>Capital:</dt><dd>Lima</dd></div>
+            <div><dt>Languages:</dt><dd>Spanish, Quechua</dd></div>
+            <div><dt>Currency:</dt><dd>Sol (PEN)</dd></div>
+            <div><dt>Time Zone:</dt><dd>UTC-5</dd></div>
+            <div><dt>Calling Code:</dt><dd>+51</dd></div>
+            <div><dt>Internet TLD:</dt><dd>.pe</dd></div>
+          </dl>
+        </div>
+      </section>
+  
+      <section class="panel weather-panel">
+        <div class="panel-header">
+          <h2 class="weather-heading">
+            <img src="images/weather-icon.svg" alt="" class="weather-icon-mobile">
+            Weather
+          </h2>
+        </div>
+        <div class="panel-body">
+          <dl>
+            <div><dt>Temperature:</dt><dd><span id="temp"></span> °C</dd></div>
+            <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+            <div><dt>Wind:</dt><dd><span id="wind-speed"></span> km/h</dd></div>
+            <div><dt>Wind Chill:</dt><dd><span id="wind-chill"></span></dd></div>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </main>
 
   <footer>
     <p>&copy; <span id="year"></span> 🔶 Alessandro Felix 🔶 Peru</p>
