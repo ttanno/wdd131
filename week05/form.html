@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form - WDD 131</title>
+  <meta name="description" content="Product review form for WDD 131 Week 05 assignment.">
+  <meta name="author" content="Alessandro Felix">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+    <p class="tagline">Tell us what you thought about a recent purchase</p>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+
+      <div class="form-row">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="form-row">
+        <legend>Overall Rating</legend>
+        <div class="rating-group">
+          <input type="radio" id="rating1" name="rating" value="1" required>
+          <label for="rating1"><span class="sr-only">1 star</span><span aria-hidden="true">&star;</span></label>
+
+          <input type="radio" id="rating2" name="rating" value="2">
+          <label for="rating2"><span class="sr-only">2 stars</span><span aria-hidden="true">&star;&star;</span></label>
+
+          <input type="radio" id="rating3" name="rating" value="3">
+          <label for="rating3"><span class="sr-only">3 stars</span><span aria-hidden="true">&star;&star;&star;</span></label>
+
+          <input type="radio" id="rating4" name="rating" value="4">
+          <label for="rating4"><span class="sr-only">4 stars</span><span aria-hidden="true">&star;&star;&star;&star;</span></label>
+
+          <input type="radio" id="rating5" name="rating" value="5">
+          <label for="rating5"><span class="sr-only">5 stars</span><span aria-hidden="true">&star;&star;&star;&star;&star;</span></label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
+      </div>
+
+      <fieldset class="form-row">
+        <legend>Useful Features</legend>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-durability" name="feature" value="Durability">
+            <label for="feature-durability">Durability</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-easeOfUse" name="feature" value="Ease of Use">
+            <label for="feature-easeOfUse">Ease of Use</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-price" name="feature" value="Price">
+            <label for="feature-price">Price</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-design" name="feature" value="Design">
+            <label for="feature-design">Design</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="feature-warranty" name="feature" value="Warranty">
+            <label for="feature-warranty">Warranty</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="5" placeholder="Share the details of your experience with this product..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="username">Your Name (optional)</label>
+        <input type="text" id="username" name="username" placeholder="Jane Doe">
+      </div>
+
+      <div class="form-row submit-row">
+        <input type="submit" value="Submit Review">
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Alessandro Felix - Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted - WDD 131</title>
+  <meta name="description" content="Confirmation page for the WDD 131 Week 05 product review form.">
+  <meta name="author" content="Alessandro Felix">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+    <p class="tagline">Your review has been received</p>
+  </header>
+
+  <main>
+    <section class="confirmation card">
+      <p id="counter" class="counter"></p>
+      <h2>Review Summary</h2>
+      <dl id="summary" class="summary-list"></dl>
+      <a class="button-link" href="form.html">Submit Another Review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Alessandro Felix - Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
