@@ -106,6 +106,10 @@ code,
   margin-bottom: 5px;
 }
 
+.type-sample .sample-text {
+  margin: 0;
+}
+
 /* Wireframes */
 .wireframe {
   display: inline-block;
