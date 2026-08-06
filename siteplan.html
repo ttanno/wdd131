@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Chess Strategy & Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Chess Strategy &amp; Learning Hub</h1>
+    <p>Website Planning Document &mdash; WDD 131</p>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <h3>Chess Strategy &amp; Learning Hub</h3>
+      <p>
+        I chose this name because it plainly describes what the site delivers: a place to
+        learn openings, sharpen tactics, and get better at chess. I play chess myself and
+        keep learning new ideas, so the name reflects both my own study habits and the goal
+        I want visitors to share &mdash; steady, practical improvement rather than gimmicks.
+      </p>
+      <p>Optional domain availability: <code class="notation">chessstrategyhub.com</code></p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>
+        The site is a learning hub for club-level and casual players who want to understand
+        chess openings and tactical patterns. It provides plain-language explanations of
+        popular openings such as the Italian Game and the Queen's Gambit, breaks down core
+        tactics like forks and pins, and lets visitors save their favorite tips and openings
+        for quick reference later. A contact form gives visitors a way to ask questions or
+        suggest new topics for the site to cover.
+      </p>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <ul>
+        <li>A beginner wants to know: &ldquo;What's a solid opening for White that doesn't
+          require memorizing a lot of theory?&rdquo;</li>
+        <li>A player who keeps losing pieces wants to know: &ldquo;How do I recognize a fork
+          before it costs me material?&rdquo;</li>
+        <li>A returning visitor wants to know: &ldquo;Can I save the tips I find useful so I
+          don't have to search for them again next time?&rdquo;</li>
+        <li>A visitor with a specific question wants to know: &ldquo;Is there a way to ask
+          about a topic the site doesn't cover yet?&rdquo;</li>
+      </ul>
+    </section>
+
+    <section id="color-schema">
+      <h2>4. Color Schema</h2>
+      <p>The palette borrows from the chessboard itself &mdash; deep navy and warm cream for
+        the "squares," with a gold accent for calls to action and highlights.</p>
+      <ul class="swatches">
+        <li class="swatch swatch-navy">
+          <div class="swatch-color"></div>
+          <p><strong>Deep Navy</strong> #1b2a4a<br>Header, footer, headings, nav background</p>
+        </li>
+        <li class="swatch swatch-cream">
+          <div class="swatch-color"></div>
+          <p><strong>Cream</strong> #f5f0e6<br>Page background</p>
+        </li>
+        <li class="swatch swatch-charcoal">
+          <div class="swatch-color"></div>
+          <p><strong>Charcoal</strong> #2b2b2b<br>Body text</p>
+        </li>
+        <li class="swatch swatch-gold">
+          <div class="swatch-color"></div>
+          <p><strong>Gold</strong> #c9a227<br>Links on hover, accents, buttons, borders</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <p>Two fonts carry most of the site, with a monospace font reserved for chess move
+        notation such as <span class="notation">e4</span> or <span class="notation">Nf3</span>.</p>
+
+      <div class="type-sample">
+        <p class="label">Headings &mdash; Playfair Display</p>
+        <h3 style="margin:0;">The Italian Game</h3>
+      </div>
+
+      <div class="type-sample">
+        <p class="label">Body text &mdash; Inter</p>
+        <p style="margin:0;">A pin restricts an opponent's piece from moving because doing so
+          would expose a more valuable piece behind it.</p>
+      </div>
+
+      <div class="type-sample">
+        <p class="label">Move notation &mdash; Roboto Mono (special use)</p>
+        <p style="margin:0;" class="notation">1. e4 e5 2. Nf3 Nc6 3. Bc4</p>
+      </div>
+    </section>
+
+    <section id="wireframes">
+      <h2>6. Wireframes</h2>
+      <p>Rough layout of the home page in mobile and desktop views. Boxes represent content
+        blocks, not final content.</p>
+
+      <div class="wireframes">
+        <div class="wireframe">
+          <h4>Mobile (portrait)</h4>
+          <div class="wf-mobile">
+            <div class="wf-box">Logo / Site Name</div>
+            <div class="wf-box">☰ Nav (stacked)</div>
+            <div class="wf-box">Hero image + intro</div>
+            <div class="wf-box">About the site</div>
+            <div class="wf-box">Featured opening card</div>
+            <div class="wf-box">Featured tactic card</div>
+            <div class="wf-box">Footer + reference link</div>
+          </div>
+        </div>
+
+        <div class="wireframe">
+          <h4>Desktop (wider)</h4>
+          <div class="wf-desktop">
+            <div class="wf-box">Logo / Site Name</div>
+            <div class="wf-nav-row">
+              <div class="wf-box">Home</div>
+              <div class="wf-box">Openings</div>
+              <div class="wf-box">Tips &amp; Tactics</div>
+              <div class="wf-box">Contact</div>
+            </div>
+            <div class="wf-box">Hero image + intro (full width)</div>
+            <div class="wf-row">
+              <div class="wf-box">Featured opening card</div>
+              <div class="wf-box">Featured tactic card</div>
+              <div class="wf-box">Why learn here?</div>
+            </div>
+            <div class="wf-box">Footer + reference link</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Chess Strategy &amp; Learning Hub &mdash; Site Plan &mdash; WDD 131</p>
+  </footer>
+</body>
+</html>
