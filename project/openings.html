@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Openings | Chess Strategy & Learning Hub</title>
+  <meta name="description" content="Learn the Italian Game, the Queen's Gambit, and the Sicilian Defense with clear explanations and diagrams of the key opening positions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">♞</span>
+        <span class="brand-name">Chess Strategy &amp; Learning Hub</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openings.html" aria-current="page">Openings</a></li>
+          <li><a href="tips.html">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Popular Openings</h1>
+          <p>
+            An opening is just a plan for your first few moves. These three openings are
+            a great place to start: they're easy to learn, lead to solid positions, and
+            are played at every level from beginner to grandmaster. Click "Save" on any
+            opening to add it to your favorites list, which is stored right in your
+            browser.
+          </p>
+        </div>
+
+        <article class="opening" id="italian">
+          <figure class="opening-figure">
+            <img src="images/opening-italian.svg" alt="Chess position after 1.e4 e5 2.Nf3 Nc6 3.Bc4, the Italian Game" width="336" height="336" loading="lazy">
+            <figcaption>Position after 1.e4 e5 2.Nf3 Nc6 3.Bc4</figcaption>
+          </figure>
+          <div class="opening-body">
+            <div class="opening-meta">
+              <h3>The Italian Game</h3>
+              <span class="badge badge-beginner">Beginner friendly</span>
+            </div>
+            <p class="notation">1. e4 e5 2. Nf3 Nc6 3. Bc4</p>
+            <p>
+              The Italian Game is one of the oldest recorded openings and still one of
+              the best for new players. White develops the knight and bishop quickly,
+              aims the bishop at the weak f7 square, and fights for the center with the
+              e4 pawn.
+            </p>
+            <ul>
+              <li>Develops pieces toward the center in the first three moves.</li>
+              <li>The bishop on c4 eyes the f7 square, a common target early in the game.</li>
+              <li>Leads to open, tactical positions that are great for learning patterns.</li>
+            </ul>
+            <button
+              type="button"
+              class="favorite-btn"
+              data-id="italian"
+              data-name="Italian Game"
+              data-href="openings.html#italian"
+              aria-pressed="false"
+            >☆ Save opening</button>
+          </div>
+        </article>
+
+        <article class="opening" id="queens-gambit">
+          <figure class="opening-figure">
+            <img src="images/opening-queens-gambit.svg" alt="Chess position after 1.d4 d5 2.c4, the Queen's Gambit" width="336" height="336" loading="lazy">
+            <figcaption>Position after 1.d4 d5 2.c4</figcaption>
+          </figure>
+          <div class="opening-body">
+            <div class="opening-meta">
+              <h3>The Queen's Gambit</h3>
+              <span class="badge badge-intermediate">Intermediate</span>
+            </div>
+            <p class="notation">1. d4 d5 2. c4</p>
+            <p>
+              White offers the c4 pawn to pull Black's d-pawn away from the center. It
+              isn't a true sacrifice: if Black captures on c4, White can usually win the
+              pawn back while getting ahead in development. Whether or not Black
+              accepts, White typically ends up with a strong central presence.
+            </p>
+            <ul>
+              <li>Called a "gambit" because White temporarily offers a pawn.</li>
+              <li>Declining the gambit (playing ...e6) is a very solid choice for Black.</li>
+              <li>Leads to rich, strategic middlegames rather than early tactics.</li>
+            </ul>
+            <button
+              type="button"
+              class="favorite-btn"
+              data-id="queens-gambit"
+              data-name="Queen's Gambit"
+              data-href="openings.html#queens-gambit"
+              aria-pressed="false"
+            >☆ Save opening</button>
+          </div>
+        </article>
+
+        <article class="opening" id="sicilian">
+          <figure class="opening-figure">
+            <img src="images/opening-sicilian.svg" alt="Chess position after 1.e4 c5, the Sicilian Defense" width="336" height="336" loading="lazy">
+            <figcaption>Position after 1.e4 c5</figcaption>
+          </figure>
+          <div class="opening-body">
+            <div class="opening-meta">
+              <h3>The Sicilian Defense</h3>
+              <span class="badge badge-advanced">Advanced</span>
+            </div>
+            <p class="notation">1. e4 c5</p>
+            <p>
+              The Sicilian is the most popular response to 1.e4 at every serious level
+              of chess. Instead of meeting White's pawn head-on, Black strikes on the
+              opposite side of the board, aiming for unbalanced, fighting positions
+              where both sides have real chances to win.
+            </p>
+            <ul>
+              <li>Statistically Black's best-scoring reply to 1.e4.</li>
+              <li>Creates asymmetrical pawn structures that avoid quick draws.</li>
+              <li>Has many named variations, so it rewards deeper study over time.</li>
+            </ul>
+            <button
+              type="button"
+              class="favorite-btn"
+              data-id="sicilian"
+              data-name="Sicilian Defense"
+              data-href="openings.html#sicilian"
+              aria-pressed="false"
+            >☆ Save opening</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-branding">
+        <p class="footer-note">Chess Strategy &amp; Learning Hub</p>
+        <p class="footer-note">&copy; <span id="year"></span> Alessandro Felix. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openings.html">Openings</a></li>
+          <li><a href="tips.html">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="references-link" href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/openings.js"></script>
+</body>
+</html>

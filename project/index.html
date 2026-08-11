@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Strategy & Learning Hub</title>
+  <meta name="description" content="Learn popular chess openings and core tactics like forks and pins, save your favorites, and ask questions at the Chess Strategy & Learning Hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">♞</span>
+        <span class="brand-name">Chess Strategy &amp; Learning Hub</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="openings.html">Openings</a></li>
+          <li><a href="tips.html">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <p class="tagline">Learn openings. Spot tactics. Play with confidence.</p>
+          <h1>Get better at chess, one clear idea at a time</h1>
+          <p>
+            The Chess Strategy &amp; Learning Hub breaks down popular openings and core
+            tactical patterns in plain language, so you can stop guessing and start
+            playing with a plan. Save the tips and openings you want to remember and
+            come back to them anytime.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="openings.html">Explore Openings</a>
+            <a class="btn btn-secondary" href="tips.html">Browse Tips &amp; Tactics</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-board.svg" alt="Illustration of a chess board set up in the starting position" width="340" height="340">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why learn here?</h2>
+          <p>Everything is written for players who want practical ideas, not dense theory.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">♗</div>
+            <h3>Popular Openings</h3>
+            <p>
+              Clear explanations of openings like the Italian Game, the Queen's Gambit,
+              and the Sicilian Defense, with diagrams of the key positions.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">♘</div>
+            <h3>Core Tactics</h3>
+            <p>
+              Learn to spot forks, pins, skewers, and other patterns before they cost
+              you material, filtered by difficulty so you can learn at your own pace.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon" aria-hidden="true">★</div>
+            <h3>Save Your Favorites</h3>
+            <p>
+              Star the openings and tips that matter most to you. They're saved right
+              in your browser, so they're waiting for you next time you visit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Start exploring</h2>
+          <p>Jump straight into an opening or a tactic below.</p>
+        </div>
+        <div class="preview-grid">
+          <div class="card preview-card">
+            <img src="images/opening-italian.svg" alt="Chess position after 1.e4 e5 2.Nf3 Nc6 3.Bc4, the Italian Game" width="336" height="336" loading="lazy">
+            <h3>Featured Opening: The Italian Game</h3>
+            <p>A classic, beginner-friendly opening for White that develops pieces quickly and fights for the center.</p>
+            <a class="btn btn-ghost" href="openings.html#italian">Read about the Italian Game</a>
+          </div>
+          <div class="card preview-card">
+            <img src="images/icon-fork.svg" alt="Icon showing a knight attacking two pieces at once" width="120" height="120" loading="lazy">
+            <h3>Featured Tactic: The Fork</h3>
+            <p>One move, two threats. Learn how to spot forking opportunities and how to avoid falling into one yourself.</p>
+            <a class="btn btn-ghost" href="tips.html#fork">Read about forks</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card" style="text-align:center;">
+          <h2>Have a question or a topic idea?</h2>
+          <p>Send a message and let us know what you'd like to see covered next.</p>
+          <a class="btn btn-primary" href="contact.html">Go to the Contact Page</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-branding">
+        <p class="footer-note">Chess Strategy &amp; Learning Hub</p>
+        <p class="footer-note">&copy; <span id="year"></span> Alessandro Felix. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openings.html">Openings</a></li>
+          <li><a href="tips.html">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="references-link" href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

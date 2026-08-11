@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips & Tactics | Chess Strategy & Learning Hub</title>
+  <meta name="description" content="Learn core chess tactics like forks, pins, skewers, discovered attacks, and back rank mates, filterable by difficulty, with a saved favorites list.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">♞</span>
+        <span class="brand-name">Chess Strategy &amp; Learning Hub</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
+      <nav class="main-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openings.html">Openings</a></li>
+          <li><a href="tips.html" aria-current="page">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Tips &amp; Tactics</h1>
+          <p>
+            Tactics are short sequences that win material or deliver checkmate.
+            Learning to recognize these patterns is one of the fastest ways to improve.
+            Filter by difficulty below, and star any tip to save it to your favorites.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter tactics by difficulty">
+          <button type="button" class="btn-ghost filter-btn is-active" data-level="all">All</button>
+          <button type="button" class="btn-ghost filter-btn" data-level="beginner">Beginner</button>
+          <button type="button" class="btn-ghost filter-btn" data-level="intermediate">Intermediate</button>
+          <button type="button" class="btn-ghost filter-btn" data-level="advanced">Advanced</button>
+        </div>
+
+        <div class="tactic-grid" id="tactic-grid" aria-live="polite">
+          <!-- Tactic cards are rendered here by scripts/tips.js -->
+        </div>
+
+        <div class="favorites-panel">
+          <h2>Your Saved Favorites</h2>
+          <p id="favorites-empty">You haven't saved any openings or tips yet. Star an opening or a tip to see it here.</p>
+          <ul class="favorites-list" id="favorites-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-branding">
+        <p class="footer-note">Chess Strategy &amp; Learning Hub</p>
+        <p class="footer-note">&copy; <span id="year"></span> Alessandro Felix. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="openings.html">Openings</a></li>
+          <li><a href="tips.html">Tips &amp; Tactics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="references-link" href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/tips.js"></script>
+</body>
+</html>

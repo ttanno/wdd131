@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="t">
+<title id="t">Icon representing a discovered attack as a knight moves aside</title>
+<circle cx="56" cy="56" r="54" fill="#1b2a4a"/>
+<text x="24" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♜</text><path d="M46 60 H90" stroke="#f5f0e6" stroke-width="3" stroke-dasharray="5,4"/><text x="92" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♚</text><path d="M56 44 Q70 20 86 30" stroke="#c9a227" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/><text x="56" y="44" font-size="22" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♘</text><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c9a227"/></marker></defs>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="t">
+<title id="t">Icon representing a back rank checkmate with a rook along the last rank</title>
+<circle cx="56" cy="56" r="54" fill="#1b2a4a"/>
+<text x="90" y="68" font-size="24" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♚</text><text x="74" y="46" font-size="16" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♟</text><text x="90" y="46" font-size="16" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♟</text><text x="106" y="46" font-size="16" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♟</text><text x="22" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♜</text><line x1="34" y1="60" x2="76" y2="60" stroke="#c9a227" stroke-width="2.5" marker-end="url(#arrow2)"/><defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#c9a227"/></marker></defs>
+</svg>

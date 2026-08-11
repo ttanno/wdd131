@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" role="img" aria-labelledby="t">
+<title id="t">Icon representing a rook skewering a king in front of a queen</title>
+<circle cx="56" cy="56" r="54" fill="#1b2a4a"/>
+<line x1="20" y1="60" x2="92" y2="60" stroke="#f5f0e6" stroke-width="3"/><text x="24" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♜</text><text x="58" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♚</text><text x="92" y="68" font-size="26" text-anchor="middle" font-family="Arial, sans-serif" fill="#c9a227">♛</text>
+</svg>
